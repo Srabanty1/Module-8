@@ -1,4 +1,4 @@
-.top-players, .blogs{
+.top-players, .blogs, .courses{
     display: grid;
    
     grid-gap:30px;
@@ -8,7 +8,7 @@
 .blogs{
     grid-template-columns: repeat(2, 1fr);
 }
-.top-players{
+.top-players, .courses{
     grid-template-columns: repeat(3, 1fr);
 }
 .player, .blog{
@@ -21,8 +21,17 @@
   
     margin-right: 20px;
 }
+body{
+    background-color: sandybrown;
+}
+section{
+    background-color: white;
+    padding:1em;
+    margin:1em;
+    border-radius: 10px;
+}
 main{
-    width: 1200px;
+    width: 900px;
     max-width: 90%;
     margin:0 auto;
    
@@ -43,7 +52,7 @@ main{
     }
 }
 @media(max-width:668px){
-    .top-players{
+    .top-players, .courses{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         
@@ -56,4 +65,11 @@ main{
 .thumb img{
     width:200px;
     margin-right: 20px;
+}
+.course img{
+    height:200px;
+    width: 200px;
+}
+.section-title{
+    color: violet;
 }
